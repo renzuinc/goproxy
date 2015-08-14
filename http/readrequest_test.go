@@ -60,6 +60,7 @@ var reqTests = []reqTest{
 				"Keep-Alive":       {"300"},
 				"Proxy-Connection": {"keep-alive"},
 				"Content-Length":   {"7"},
+				"Host":             {"www.techcrunch.com"},
 				"User-Agent":       {"Fake"},
 			},
 			Close:         false,

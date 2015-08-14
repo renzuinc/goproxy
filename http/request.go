@@ -655,8 +655,8 @@ func ReadRequest(b *bufio.Reader) (req *Request, err error) {
 	req.Host = req.URL.Host
 	if req.Host == "" {
 		req.Host = req.Header.get("Host")
+		delete(req.Header, "Host")
 	}
-	delete(req.Header, "Host")
 
 	fixPragmaCacheControl(req.Header)
 
