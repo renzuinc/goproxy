@@ -16,13 +16,14 @@ import (
 	"io"
 	"io/ioutil"
 	"log"
-	"net/http"
 	"os"
 	"os/exec"
 	"path"
 	"strings"
 
-	"github.com/elazarl/goproxy"
+	"github.com/renzuinc/goproxy/http"
+
+	"github.com/renzuinc/goproxy"
 )
 
 func main() {

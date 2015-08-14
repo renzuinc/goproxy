@@ -1,6 +1,6 @@
 package goproxy
 
-import "net/http"
+import "github.com/renzuinc/goproxy/http"
 
 // ReqHandler will "tamper" with the request coming to the proxy server
 // If Handle returns req,nil the proxy will send the returned request

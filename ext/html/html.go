@@ -6,12 +6,13 @@ import (
 	"errors"
 	"io"
 	"io/ioutil"
-	"net/http"
 	"strings"
+
+	"github.com/renzuinc/goproxy/http"
 
 	"code.google.com/p/go-charset/charset"
 	_ "code.google.com/p/go-charset/data"
-	"github.com/elazarl/goproxy"
+	"github.com/renzuinc/goproxy"
 )
 
 var IsHtml goproxy.RespCondition = goproxy.ContentTypeIs("text/html")

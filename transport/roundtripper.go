@@ -1,5 +1,7 @@
 package transport
-import "net/http"
+
+import "github.com/renzuinc/goproxy/http"
+
 type RoundTripper interface {
 	// RoundTrip executes a single HTTP transaction, returning
 	// the Response for the request req.  RoundTrip should not

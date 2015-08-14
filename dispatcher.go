@@ -4,9 +4,10 @@ import (
 	"bytes"
 	"io/ioutil"
 	"net"
-	"net/http"
 	"regexp"
 	"strings"
+
+	"github.com/renzuinc/goproxy/http"
 )
 
 // ReqCondition.HandleReq will decide whether or not to use the ReqHandler on an HTTP request

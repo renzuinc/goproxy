@@ -10,16 +10,16 @@ import (
 	"io"
 	"io/ioutil"
 	"net"
-	"net/http"
-	"net/http/httptest"
 	"net/url"
 	"os"
 	"os/exec"
 	"strings"
 	"testing"
 
-	"github.com/elazarl/goproxy"
-	"github.com/elazarl/goproxy/ext/image"
+	"github.com/renzuinc/goproxy"
+	"github.com/renzuinc/goproxy/ext/image"
+	"github.com/renzuinc/goproxy/http"
+	"github.com/renzuinc/goproxy/http/httptest"
 )
 
 var acceptAllCerts = &tls.Config{InsecureSkipVerify: true}

@@ -4,13 +4,14 @@ import (
 	"crypto/tls"
 	"crypto/x509"
 	"io/ioutil"
-	"net/http"
-	"net/http/httptest"
 	"os"
 	"os/exec"
 	"strings"
 	"testing"
 	"time"
+
+	"github.com/renzuinc/goproxy/http"
+	"github.com/renzuinc/goproxy/http/httptest"
 )
 
 func orFatal(msg string, err error, t *testing.T) {

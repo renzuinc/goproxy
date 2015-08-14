@@ -1,8 +1,9 @@
 package goproxy
 
 import (
-	"net/http"
 	"regexp"
+
+	"github.com/renzuinc/goproxy/http"
 )
 
 // ProxyCtx is the Proxy context, contains useful information about every request. It is passed to

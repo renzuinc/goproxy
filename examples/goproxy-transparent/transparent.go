@@ -7,12 +7,12 @@ import (
 	"fmt"
 	"log"
 	"net"
-	"net/http"
 	"net/url"
 	"regexp"
 
-	"github.com/elazarl/goproxy"
-	"github.com/inconshreveable/go-vhost"
+	"github.com/renzuinc/goproxy/http"
+
+	"github.com/renzuinc/goproxy"
 )
 
 func orPanic(err error) {

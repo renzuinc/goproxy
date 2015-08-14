@@ -5,10 +5,11 @@ import (
 	"flag"
 	"log"
 	"net"
-	"net/http"
 	"regexp"
 
-	"github.com/elazarl/goproxy"
+	"github.com/renzuinc/goproxy/http"
+
+	"github.com/renzuinc/goproxy"
 )
 
 func orPanic(err error) {

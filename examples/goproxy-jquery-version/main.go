@@ -1,11 +1,12 @@
 package main
 
 import (
-	"github.com/elazarl/goproxy"
-	"github.com/elazarl/goproxy/ext/html"
 	"log"
-	"net/http"
 	"regexp"
+
+	"github.com/renzuinc/goproxy"
+	"github.com/renzuinc/goproxy/ext/html"
+	"github.com/renzuinc/goproxy/http"
 )
 
 var (

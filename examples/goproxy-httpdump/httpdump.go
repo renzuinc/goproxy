@@ -7,16 +7,17 @@ import (
 	"io"
 	"log"
 	"net"
-	"net/http"
-	"net/http/httputil"
 	"os"
 	"os/signal"
 	"path"
 	"sync"
 	"time"
 
-	"github.com/elazarl/goproxy"
-	"github.com/elazarl/goproxy/transport"
+	"github.com/renzuinc/goproxy/http"
+	"github.com/renzuinc/goproxy/http/httputil"
+
+	"github.com/renzuinc/goproxy"
+	"github.com/renzuinc/goproxy/transport"
 )
 
 type FileStream struct {

@@ -4,11 +4,12 @@ import (
 	"bytes"
 	"io/ioutil"
 	"log"
-	"net/http"
-	"net/http/httptest"
 	"net/url"
 	"strings"
 	"testing"
+
+	"github.com/renzuinc/goproxy/http"
+	"github.com/renzuinc/goproxy/http/httptest"
 )
 
 func equal(u, v []string) bool {

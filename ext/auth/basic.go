@@ -4,10 +4,11 @@ import (
 	"bytes"
 	"encoding/base64"
 	"io/ioutil"
-	"net/http"
 	"strings"
 
-	"github.com/elazarl/goproxy"
+	"github.com/renzuinc/goproxy/http"
+
+	"github.com/renzuinc/goproxy"
 )
 
 var unauthorizedMsg = []byte("407 Proxy Authentication Required")
