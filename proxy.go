@@ -2,7 +2,6 @@ package goproxy
 
 import (
 	"bufio"
-	"fmt"
 	"io"
 	"log"
 	"net"
@@ -113,7 +112,6 @@ func (proxy *ProxyHttpServer) ServeHTTP(w http.ResponseWriter, r *http.Request) 
 
 		if resp == nil {
 			removeProxyHeaders(ctx, r)
-			fmt.Printf("Req %+v\n", r)
 			resp, err = ctx.RoundTrip(r)
 			if err != nil {
 				ctx.Error = err
